@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño responsivo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #edf6f9;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #1d3557;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        .contenedor {
+            display: flex;
+            gap: 20px;
+        }
+
+        .caja {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            flex: 1;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                display: block;
+                border-bottom: 1px solid white;
+            }
+
+            .contenedor {
+                flex-direction: column;
+            }
+
+            body {
+                background-color: #f1faee;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#biografia">Biografía</a>
+        <a href="#pasatiempos">Pasatiempos</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    </nav>
+
+    <section id="inicio">
+        <h1>Ejercicio 8: Diseño responsivo</h1>
+        <p>Esta página cambia su diseño para verse mejor en celulares y computadoras.</p>
+    </section>
+
+    <section class="contenedor">
+        <div class="caja">
+            <h2>Biografía</h2>
+            <p>Soy Mario Intriago y estoy aprendiendo HTML y CSS.</p>
+        </div>
+
+        <div class="caja">
+            <h2>Pasatiempos</h2>
+            <p>Me gusta la música, los videojuegos y la tecnología.</p>
+        </div>
+    </section>
+
+    <p style="padding: 30px;">
+        <a href="index.html">Volver al inicio</a>
+    </p>
+
+</body>
+</html>

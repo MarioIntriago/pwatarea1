@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de imágenes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #1d3557;
+            text-align: center;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .galeria img {
+            width: 220px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #1d3557;
+            cursor: pointer;
+        }
+
+        .ventana {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 80px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            text-align: center;
+        }
+
+        .ventana img {
+            width: 70%;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        .ventana:target {
+            display: block;
+        }
+
+        .cerrar {
+            color: white;
+            font-size: 35px;
+            text-decoration: none;
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 9: Galería de pasatiempos</h1>
+
+    <div class="galeria">
+        <a href="#img1">
+            <img src="Imagenes/game.png" alt="Videojuegos">
+        </a>
+
+        <a href="#img2">
+            <img src="Imagenes/music.png" alt="Música">
+        </a>
+
+        <a href="#img3">
+            <img src="Imagenes/pc.png" alt="Computadora">
+        </a>
+    </div>
+
+    <div id="img1" class="ventana">
+        <a href="#" class="cerrar">X</a>
+        <img src="Imagenes/game.png" alt="Videojuegos">
+    </div>
+
+    <div id="img2" class="ventana">
+        <a href="#" class="cerrar">X</a>
+        <img src="Imagenes/music.png" alt="Música">
+    </div>
+
+    <div id="img3" class="ventana">
+        <a href="#" class="cerrar">X</a>
+        <img src="Imagenes/pc.png" alt="Computadora">
+    </div>
+
+    <br><br>
+
+    <a href="index.html">Volver al inicio</a>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página completa de biografía</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef3f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #457b9d;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .contenedor {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            flex: 3;
+            border-radius: 8px;
+        }
+
+        aside {
+            background-color: #a8dadc;
+            padding: 20px;
+            flex: 1;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .contenedor {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi página personal</h1>
+        <p>Biografía de Mario Intriago</p>
+    </header>
+
+    <nav>
+        <a href="#biografia">Biografía</a>
+        <a href="#estudios">Estudios</a>
+        <a href="#pasatiempos">Pasatiempos</a>
+        <a href="index.html">Inicio</a>
+    </nav>
+
+    <div class="contenedor">
+        <main>
+            <section id="biografia">
+                <h2>Biografía</h2>
+                <p>
+                    Mi nombre es Mario Intriago. Soy estudiante y me interesa aprender
+                    sobre programación web, computadoras y tecnología.
+                </p>
+            </section>
+
+            <section id="estudios">
+                <h2>Estudios</h2>
+                <p>
+                    Actualmente estoy estudiando y realizando prácticas con HTML y CSS
+                    para mejorar mis conocimientos en desarrollo web.
+                </p>
+            </section>
+
+            <section id="pasatiempos">
+                <h2>Pasatiempos</h2>
+                <p>
+                    Mis pasatiempos son escuchar música, jugar videojuegos,
+                    aprender sobre computadoras y reparar celulares.
+                </p>
+
+                <img src="Imagenes/pc.png" alt="Computadora">
+            </section>
+        </main>
+
+        <aside>
+            <h2>Información adicional</h2>
+            <p><strong>Nombre:</strong> Mario Intriago</p>
+            <p><strong>Área:</strong> Programación Web</p>
+            <p><strong>Intereses:</strong> Tecnología, música y videojuegos.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Trabajo realizado para la asignatura de Programación Web</p>
+    </footer>
+
+</body>
+</html>

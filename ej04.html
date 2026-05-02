@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario básico</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1faee;
+            padding: 30px;
+        }
+
+        form {
+            background-color: white;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 12px;
+        }
+
+        button {
+            background-color: #1d3557;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e63946;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 4: Formulario básico</h1>
+
+    <form onsubmit="alert('Formulario enviado correctamente');">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br>
+
+        <label>Correo electrónico:</label><br>
+        <input type="email" name="correo" required><br>
+
+        <label>Edad:</label><br>
+        <input type="number" name="edad" required><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <a href="index.html">Volver al inicio</a>
+
+</body>
+</html>
